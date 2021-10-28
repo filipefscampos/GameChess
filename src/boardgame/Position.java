@@ -4,10 +4,6 @@ public class Position {
 	
 	private int row;
 	private int colum;
-	
-	public Position() {
-		
-	}
 
 	public Position(int row, int colum) {
 		this.row = row;
