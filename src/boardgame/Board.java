@@ -28,5 +28,14 @@ public class Board {
 		this.columns = columns;
 	}
 	
+	public Piece piece(int row, int column) {
+		return pieces[row][column];
+	}
+	
+	//Estamos fazendo aqui uma sobreposição do proprio metodo Piece contudo retornando
+	//Ao invés da linha e coluna do board, pegando a linha e coluna da posição
+	public Piece piece(Position position) {
+		return pieces[position.getRow()][position.getColumn()];
+	}
 	
 }
