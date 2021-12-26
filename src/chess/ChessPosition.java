@@ -9,7 +9,7 @@ public class ChessPosition {
 
 	public ChessPosition(char column, int row) {
 		if (column < 'a' || column > 'h' || row < 1 || row > 8) {
-			throw new ChessException("Erro para instancia a posição do Chess, posições válida de a1 até h8.");
+			throw new ChessException("Erro para instancia a posicao do Chess, posicoes validas de a1 ate h8.");
 		}
 		this.column = column;
 		this.row = row;
